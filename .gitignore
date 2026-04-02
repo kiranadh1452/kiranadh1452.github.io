@@ -1,0 +1,20 @@
+# AI assistant files
+CLAUDE.md
+.claude/
+.playwright-mcp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Screenshots from testing
+*.png
+*.jpg
+!CV_kiran-adhikari.pdf
