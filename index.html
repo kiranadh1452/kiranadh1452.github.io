@@ -115,16 +115,34 @@
 
       <article class="exp-card reveal">
         <div class="exp-card__left">
-          <div class="exp-card__company">Triple Whale</div>
-          <div class="exp-card__location">Columbus, OH</div>
-          <div class="exp-card__date">Sep 2023 &ndash; Jun 2024</div>
+          <div class="exp-card__company">Tono&iuml;d</div>
+          <div class="exp-card__location">Paris, France</div>
+          <div class="exp-card__date">Oct 2024 &ndash; Present</div>
         </div>
         <div class="exp-card__right">
-          <h3 class="exp-card__title">Software Developer</h3>
+          <h3 class="exp-card__title">Expert Backend Developer</h3>
           <ul class="exp-card__bullets">
-            <li>Worked on data integration from various sources like Shopify Partners, MongoDB, Firebase, Stripe and many more to get business insights and approach investors</li>
-            <li>Created smooth ETL pipelines through serverless cloud functions for cron jobs and one-time data patches</li>
-            <li>Collaborated with Corey and his team in implementing PostHog to track users in order to track the usability of available features</li>
+            <li>Adding new API integrations like Google Contacts, Gmail, Outlook Calendar, Outlook Mail, Outlook People, etc. for two-way sync between sources</li>
+            <li>Introduced change-based tracking to avoid fetching all entities from the source and save computation</li>
+            <li>Created a robust and independent heartbeat system that allows any scheduled job to expire if it fails to update the heartbeat within a certain time, handling stuck jobs and their side effects</li>
+            <li>Worked directly with Notion&rsquo;s official team in testing their beta webhook release, responsible for adding &ldquo;Retry attempt&rdquo; in Notion webhook&rsquo;s event header</li>
+            <li>Refactored the existing codebase into a more modular approach so that each integration can share the same baseline</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-card__left">
+          <div class="exp-card__company">ProfitPeak</div>
+          <div class="exp-card__location">Sydney, Australia</div>
+          <div class="exp-card__date">May 2024 &ndash; Oct 2024</div>
+        </div>
+        <div class="exp-card__right">
+          <h3 class="exp-card__title">Software Engineer</h3>
+          <ul class="exp-card__bullets">
+            <li>Primarily worked on re-designing a new system architecture</li>
+            <li>Created independent, self-healing and reliable ETL pipelines to fetch, format and store data from sources such as Meta Ads, Google Ads, Klaviyo, etc.</li>
+            <li>Created an identity service built on top of a pixel service to identify unique customers across client stores through a combination of email, client IDs, custom IDs, IP addresses, etc. to gain valuable and accurate insights</li>
           </ul>
         </div>
       </article>
@@ -139,7 +157,23 @@
           <h3 class="exp-card__title">Expert Backend Developer</h3>
           <ul class="exp-card__bullets">
             <li>Primarily worked on fixing production bugs and error tracing</li>
-            <li>Implemented strategies to reduce the latency to 20% of the existing latency for endpoints with latencies exceeding the agreed upon latency as mentioned in the company's SLA</li>
+            <li>Implemented strategies to reduce the latency by 80% for endpoints with latencies exceeding the agreed upon latency as mentioned in the company&rsquo;s SLA</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-card__left">
+          <div class="exp-card__company">Triple Whale</div>
+          <div class="exp-card__location">Columbus, OH</div>
+          <div class="exp-card__date">Sep 2022 &ndash; Jun 2023</div>
+        </div>
+        <div class="exp-card__right">
+          <h3 class="exp-card__title">Software Developer</h3>
+          <ul class="exp-card__bullets">
+            <li>Worked on data integration from various sources like Shopify Partners, MongoDB, Firebase, Stripe and many more to get business insights and approach investors</li>
+            <li>Created smooth ETL pipelines through serverless cloud functions for cron jobs and one-time data patches</li>
+            <li>Collaborated with Corey and his team in implementing PostHog to track users in order to track the usability of available features</li>
           </ul>
         </div>
       </article>
@@ -156,7 +190,7 @@
             <li>Directly worked under CEO in product development and team handling</li>
             <li>Built express.js based backend of multiple projects: Book Lifter, RestroX, etc.</li>
             <li>Started the trend of automation (testing and development) in the company, created proper CI/CD pipelines for multiple products</li>
-            <li>Ran technical analysis of 'RestroX' &mdash; Restaurant Operating System, the biggest in-house project dominating the market in Nepal</li>
+            <li>Ran technical analysis of &lsquo;RestroX&rsquo; &mdash; Restaurant Operating System, the biggest in-house project dominating the market in Nepal</li>
             <li>Researched and administered the shift from Role Based Access Control to Attribute Based Access Control and multi-tenant architecture</li>
             <li>Conducted technical interviews, mentored interns and junior developers</li>
           </ul>
@@ -204,15 +238,16 @@
       <div class="projects-grid">
         <div class="project-card reveal">
           <div class="project-card__header">
-            <h3 class="project-card__name">Stripe Data Analyser</h3>
+            <h3 class="project-card__name">NEPSE Tools</h3>
             <span class="project-card__status project-card__status--active" title="Active"></span>
           </div>
-          <p class="project-card__desc">Fetch and analyze data from Stripe using Stripe Fetcher Plus</p>
+          <p class="project-card__desc">Collection of mini tools for Nepal Stock Exchange investors &mdash; trade calculator, risk calculator, portfolio tracker. Built with vanilla JS and Alpine.js.</p>
           <div class="project-card__tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">Stripe API</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Alpine.js</span>
+            <span class="tag">Tailwind CSS</span>
           </div>
-          <a href="https://github.com/kiranadh1452" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kiranadh1452/nepse-tools" class="project-card__link" target="_blank" rel="noopener noreferrer">
             GitHub
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
@@ -220,14 +255,32 @@
 
         <div class="project-card reveal">
           <div class="project-card__header">
-            <h3 class="project-card__name">Stripe-Models</h3>
+            <h3 class="project-card__name">Stripe Data Analyser</h3>
             <span class="project-card__status project-card__status--active" title="Active"></span>
           </div>
-          <p class="project-card__desc">TypeScript Based Event Management and Payment System (Backend)</p>
+          <p class="project-card__desc">Suite of tools to fetch and analyze Stripe data &mdash; includes Stripe Fetcher Plus and Stripe-NodeJs integration library.</p>
+          <div class="project-card__tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Stripe API</span>
+          </div>
+          <a href="https://github.com/kiranadh1452/stripe-data-anaylsis-backend" class="project-card__link" target="_blank" rel="noopener noreferrer">
+            GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <h3 class="project-card__name">Event Registrator</h3>
+            <span class="project-card__status project-card__status--active" title="Active"></span>
+          </div>
+          <p class="project-card__desc">TypeScript backend for event creation, registration, and participation with Stripe payment integration.</p>
           <div class="project-card__tags">
             <span class="tag">TypeScript</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Express</span>
           </div>
-          <a href="https://github.com/kiranadh1452" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kiranadh1452/event-registrator-backend" class="project-card__link" target="_blank" rel="noopener noreferrer">
             GitHub
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
@@ -238,11 +291,11 @@
             <h3 class="project-card__name">K-Web Browser</h3>
             <span class="project-card__status project-card__status--archived" title="Archived"></span>
           </div>
-          <p class="project-card__desc">Custom web browser built from scratch for learning purposes</p>
+          <p class="project-card__desc">Custom web browser built from scratch in C++ for learning purposes.</p>
           <div class="project-card__tags">
             <span class="tag">C++</span>
           </div>
-          <a href="https://github.com/kiranadh1452" class="project-card__link" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/kiranadh1452/K-Web-Browser" class="project-card__link" target="_blank" rel="noopener noreferrer">
             GitHub
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
@@ -258,6 +311,22 @@
             <span class="tag">Python</span>
             <span class="tag">CNN</span>
           </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <h3 class="project-card__name">Web Page Builder</h3>
+            <span class="project-card__status project-card__status--archived" title="Archived"></span>
+          </div>
+          <p class="project-card__desc">A drag-and-drop web page builder made purely with vanilla JavaScript. Solo major project at Leapfrog internship.</p>
+          <div class="project-card__tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Vanilla JS</span>
+          </div>
+          <a href="https://github.com/kiranadh1452/Web-Page-Builder" class="project-card__link" target="_blank" rel="noopener noreferrer">
+            GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
         </div>
       </div>
     </section>
