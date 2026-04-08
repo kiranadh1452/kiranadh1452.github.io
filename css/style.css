@@ -646,6 +646,40 @@ button {
   height: 14px;
 }
 
+.project-card__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.project-card__links .project-card__link {
+  margin-top: 0;
+}
+
+.project-card__link-sep {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-small);
+  user-select: none;
+}
+
+.project-card__link--live {
+  color: var(--accent-success);
+}
+
+.project-card__link--live:hover {
+  color: var(--text-primary);
+}
+
+.projects-grid__note {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: var(--type-small);
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-2);
+}
+
 /* ========================================
    OPEN SOURCE
    ======================================== */
