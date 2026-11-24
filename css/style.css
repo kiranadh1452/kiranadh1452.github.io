@@ -371,13 +371,35 @@ button {
   z-index: 1;
 }
 
+.hero__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+.hero__avatar {
+  flex-shrink: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--surface-secondary);
+  border: 1px solid var(--border-strong);
+  transition: border-color 300ms;
+}
+
+.hero__identity {
+  min-width: 0;
+}
+
 .hero__prompt {
   font-family: var(--font-mono);
   font-size: var(--type-label);
   font-weight: 500;
   letter-spacing: 0.08em;
   color: var(--text-tertiary);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 .hero__name {
@@ -387,7 +409,7 @@ button {
   line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--text-primary);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
   transition: color 300ms;
 }
 
@@ -398,7 +420,6 @@ button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-primary);
-  margin-bottom: var(--space-6);
   transition: color 300ms;
 }
 
@@ -1241,6 +1262,15 @@ button {
   .hero__meta {
     flex-direction: column;
     gap: var(--space-3);
+  }
+
+  .hero__header {
+    gap: var(--space-4);
+  }
+
+  .hero__avatar {
+    width: 64px;
+    height: 64px;
   }
 
   .exp-card {
