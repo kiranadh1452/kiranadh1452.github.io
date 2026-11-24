@@ -478,6 +478,10 @@ button {
   background: transparent;
 }
 
+.hero__actions + .hero__meta {
+  margin-top: var(--space-8);
+}
+
 .hero__secondary {
   font-family: var(--font-mono);
   font-size: var(--type-small);
@@ -536,11 +540,12 @@ button {
 .hero--loaded .hero__content > *:nth-child(5) { transition-delay: 360ms; }
 .hero--loaded .hero__content > *:nth-child(6) { transition-delay: 400ms; }
 .hero--loaded .hero__content > *:nth-child(7) { transition-delay: 440ms; }
+.hero--loaded .hero__content > *:nth-child(8) { transition-delay: 480ms; }
 
 .hero--loaded .hero__scroll-indicator {
   opacity: 1;
   transform: translateY(0);
-  transition: opacity 300ms var(--ease-out-expo) 520ms, transform 300ms var(--ease-out-expo) 520ms;
+  transition: opacity 300ms var(--ease-out-expo) 560ms, transform 300ms var(--ease-out-expo) 560ms;
 }
 
 .hero__scroll-indicator {
@@ -549,36 +554,8 @@ button {
 }
 
 /* ========================================
-   ABOUT
+   CASE STUDIES (case cards + testimonial)
    ======================================== */
-
-.about__p {
-  line-height: 1.7;
-  color: var(--text-secondary);
-  transition: color 300ms;
-}
-
-.about__p:not(:last-child) {
-  margin-bottom: var(--space-6);
-}
-
-.about__p--lead {
-  color: var(--text-primary);
-}
-
-/* ========================================
-   PRODUCTION WORK (case cards + testimonial)
-   ======================================== */
-
-.section-heading {
-  font-size: var(--type-h2);
-  font-weight: 600;
-  line-height: 1.3;
-  letter-spacing: -0.01em;
-  color: var(--text-primary);
-  margin-bottom: var(--space-2);
-  transition: color 300ms;
-}
 
 .section-note {
   font-family: var(--font-mono);
@@ -685,6 +662,11 @@ button {
   border-left: 3px solid var(--accent-primary);
   padding-left: var(--space-6);
   transition: border-color 300ms;
+}
+
+.testimonial--lead {
+  margin-top: 0;
+  margin-bottom: var(--space-12);
 }
 
 .testimonial__quote {
