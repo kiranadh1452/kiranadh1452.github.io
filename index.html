@@ -42,9 +42,8 @@
     <div class="nav__inner">
       <a href="/" class="nav__home" aria-label="Kiran Adhikari, home">kiran adhikari</a>
       <div class="nav__links" role="list">
-        <a href="#about" class="nav__link" role="listitem">about</a>
-        <a href="#work" class="nav__link" role="listitem">work</a>
         <a href="#experience" class="nav__link" role="listitem">experience</a>
+        <a href="#case-studies" class="nav__link" role="listitem">case studies</a>
         <a href="#projects" class="nav__link" role="listitem">projects</a>
         <a href="#open-source" class="nav__link" role="listitem">open source</a>
         <a href="#community" class="nav__link" role="listitem">community</a>
@@ -79,9 +78,8 @@
 
   <!-- Mobile Progress Dots -->
   <div class="mobile-progress" aria-label="Section progress" role="navigation">
-    <div class="mobile-progress__dot mobile-progress__dot--active" aria-label="About"></div>
-    <div class="mobile-progress__dot" aria-label="Production Work"></div>
-    <div class="mobile-progress__dot" aria-label="Experience"></div>
+    <div class="mobile-progress__dot mobile-progress__dot--active" aria-label="Experience"></div>
+    <div class="mobile-progress__dot" aria-label="Case Studies"></div>
     <div class="mobile-progress__dot" aria-label="Projects"></div>
     <div class="mobile-progress__dot" aria-label="Open Source"></div>
     <div class="mobile-progress__dot" aria-label="Community"></div>
@@ -98,18 +96,29 @@
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__cursor" aria-hidden="true"></div>
       <div class="hero__content">
-        <p class="hero__prompt">$ whoami</p>
-        <h1 class="hero__name">Kiran Adhikari</h1>
-        <p class="hero__role">Lead Full-Stack Engineer</p>
+        <div class="hero__header">
+          <img class="hero__avatar" src="/public/avatar-192.jpg" alt="Kiran Adhikari" width="88" height="88" decoding="async" fetchpriority="high">
+          <div class="hero__identity">
+            <p class="hero__prompt">$ whoami</p>
+            <h1 class="hero__name">Kiran Adhikari</h1>
+            <p class="hero__role">Lead Full-Stack Engineer</p>
+          </div>
+        </div>
         <p class="hero__tagline">Senior full-stack engineer. Backend, frontend and infra&mdash;deepest on integrations and data sync. I ship with Claude Code and I own what it writes.</p>
-        <p class="hero__pitch">I learned to design systems before AI wrote code. Over two years at 2sync, I built seven of ten provider integrations, engineered the data-integrity guardrails that protect customer calendars and inboxes, and ran production end-to-end&mdash;including four weeks operating the entire SaaS solo.</p>
+        <p class="hero__pitch">5+ years building production systems across remote teams in the US, Australia, and Europe&mdash;I learned to design architecture before AI wrote code. Most recently, over two years at 2sync, I built seven of ten provider integrations, engineered the data-integrity guardrails that protect customer calendars and inboxes, and ran production end-to-end&mdash;including four weeks operating the entire SaaS solo.</p>
         <div class="availability">
           <span class="availability__dot" aria-hidden="true"></span>
           <p class="availability__text">Available from <strong>7 December 2026</strong> for fractional retainers (15&ndash;20 hrs/wk) or a dedicated full-time B2B contract.</p>
         </div>
         <div class="hero__actions">
           <a href="mailto:kiranadh1452@gmail.com" class="hero__cta">kiranadh1452@gmail.com</a>
-          <a href="#work" class="hero__secondary">see production work &darr;</a>
+          <a href="#case-studies" class="hero__secondary">see case studies &darr;</a>
+        </div>
+        <div class="hero__meta">
+          <span class="hero__meta-item">Nepal &rarr; USA &middot; France &middot; Australia</span>
+          <span class="hero__meta-item">Node &middot; TypeScript &middot; Python &middot; Rust</span>
+          <span class="hero__meta-item">PostgreSQL &middot; MongoDB &middot; Redis &middot; Vue/Nuxt</span>
+          <span class="hero__meta-item">Open Source Contributor</span>
         </div>
       </div>
       <div class="hero__scroll-indicator" aria-hidden="true">
@@ -117,134 +126,32 @@
       </div>
     </section>
 
-    <!-- [01] ABOUT -->
-    <section id="about" class="section">
-      <p class="section-label reveal">[01] About</p>
+    <!-- [01] EXPERIENCE -->
+    <section id="experience" class="section">
+      <p class="section-label reveal">[01] Experience</p>
       <hr class="section-rule reveal">
 
-      <div class="about">
-        <p class="about__p about__p--lead reveal">For two years I was the Lead Full-Stack Engineer at 2sync, a SaaS that keeps Notion in two-way sync with Google, Microsoft, and Todoist. Its code writes directly into customers&rsquo; calendars, contacts, and inboxes, so a bug costs someone real data. I built seven of its ten integrations, the guardrails that stop a flaky API from deleting customer data, and the release process that let me run production alone for a month.</p>
-        <p class="about__p reveal">I learned architecture the slow way, before coding agents. Now I use Claude Code every day. I write the specs and skills the agent works from, I decide the design, and I test its output against real data before anything ships. The agent makes me faster&mdash;it doesn&rsquo;t make my decisions.</p>
-        <p class="about__p reveal">I&rsquo;m looking for one or two teams that want a senior engineer who can own a product end-to-end. Integrations, sync engines, and background job queues are where I&rsquo;m deepest, and at 2sync I also took on the Vue/Nuxt frontend, Hetzner/OpenTofu/Dokploy infrastructure, customer support, and KPI tracking&mdash;because that&rsquo;s what the product needed.</p>
-      </div>
-    </section>
-
-    <!-- [02] PRODUCTION WORK -->
-    <section id="work" class="section">
-      <p class="section-label reveal">[02] Production Work</p>
-      <hr class="section-rule reveal">
-      <h2 class="section-heading reveal">Selected Production Work &amp; Architecture</h2>
-      <p class="section-note reveal">// Systems I built and ran at 2sync, described at the architecture level</p>
-
-      <article class="case-card reveal">
-        <header class="case-card__header">
-          <span class="case-card__index" aria-hidden="true">01</span>
-          <h3 class="case-card__title">Teaching Coding Agents to Build Two-Way Sync Integrations Safely</h3>
-          <span class="case-card__badge">Full case study coming soon</span>
-        </header>
-        <dl class="case-card__rows">
-          <div class="case-card__row">
-            <dt>Context</dt>
-            <dd>Adding a new two-way provider integration touches OAuth, field mapping, rate limits, queue workers, and frontend onboarding&mdash;where naive shared abstractions create subtle data-loss bugs.</dd>
-          </div>
-          <div class="case-card__row">
-            <dt>Approach</dt>
-            <dd>Authored reusable Claude Code skills and reference specs encoding strict architectural rules (such as keeping per-provider sync pipelines isolated rather than forcing brittle abstractions) alongside automated QA walkthrough checklists.</dd>
-          </div>
-          <div class="case-card__row case-card__row--outcome">
-            <dt>Outcome</dt>
-            <dd>Shipped Microsoft To Do and two-way Google Sheets (using ULID row identities and three-way field-hash merging) cleanly into production.</dd>
-          </div>
-        </dl>
-        <div class="case-card__tags">
-          <span class="tag">Claude Code</span>
-          <span class="tag">OAuth</span>
-          <span class="tag">Two-way sync</span>
-          <span class="tag">ULID</span>
-        </div>
-      </article>
-
-      <article class="case-card reveal">
-        <header class="case-card__header">
-          <span class="case-card__index" aria-hidden="true">02</span>
-          <h3 class="case-card__title">Fault-Tolerant Queue Orchestration &amp; Deletion-Safety Guardrails</h3>
-        </header>
-        <dl class="case-card__rows">
-          <div class="case-card__row">
-            <dt>Context</dt>
-            <dd>In multi-provider sync engines, stalled workers can hang silently while partial third-party API responses can trick diff engines into wiping user records.</dd>
-          </div>
-          <div class="case-card__row">
-            <dt>Approach</dt>
-            <dd>Designed a step-level Redis heartbeat system tied to execution IDs to detect and terminate stalled jobs, multi-stage upstream verification before any deletion, and a capped two-stage daily health monitor across customer automations.</dd>
-          </div>
-          <div class="case-card__row case-card__row--outcome">
-            <dt>Outcome</dt>
-            <dd>Eliminated false-deletion failure modes, ran zero-downtime MongoDB migrations with rollback scripts, and maintained production data integrity across 7 of 2sync&rsquo;s 10 integrations.</dd>
-          </div>
-        </dl>
-        <div class="case-card__tags">
-          <span class="tag">Redis</span>
-          <span class="tag">Job queues</span>
-          <span class="tag">MongoDB</span>
-        </div>
-      </article>
-
-      <article class="case-card reveal">
-        <header class="case-card__header">
-          <span class="case-card__index" aria-hidden="true">03</span>
-          <h3 class="case-card__title">End-to-End Production Ownership &amp; Solo SaaS Operations</h3>
-        </header>
-        <dl class="case-card__rows">
-          <div class="case-card__row">
-            <dt>Context</dt>
-            <dd>Transitioned from backend engineer to full product owner across backend, Vue/Nuxt dashboard, and Hetzner/OpenTofu/Dokploy infrastructure.</dd>
-          </div>
-          <div class="case-card__row">
-            <dt>Approach</dt>
-            <dd>Established a weekly release train gated by CI checks and production dry-runs, executed a multi-server infrastructure cutover, and set up structured support triage.</dd>
-          </div>
-          <div class="case-card__row case-card__row--outcome">
-            <dt>Outcome</dt>
-            <dd>Operated the entire live SaaS solo for four weeks (releases, incident response, support, and billing) while shipping a new provider integration.</dd>
-          </div>
-        </dl>
-        <div class="case-card__tags">
-          <span class="tag">Vue / Nuxt</span>
-          <span class="tag">Hetzner</span>
-          <span class="tag">OpenTofu</span>
-          <span class="tag">Dokploy</span>
-          <span class="tag">CI</span>
-        </div>
-      </article>
-
-      <figure class="testimonial reveal">
+      <figure class="testimonial testimonial--lead reveal">
         <blockquote class="testimonial__quote">
           <p>&ldquo;Kiran owned 2sync&rsquo;s two-way sync engine, from the job queues to the dashboard. When I went offline for four weeks, he ran the whole product alone. I trusted him with production and with our customers&rsquo; data, and I would again.&rdquo;</p>
         </blockquote>
         <figcaption class="testimonial__source">&mdash; <strong>Simo Elalj</strong>, Founder of tono&iuml;d and 2sync</figcaption>
       </figure>
-    </section>
-
-    <!-- [03] EXPERIENCE -->
-    <section id="experience" class="section">
-      <p class="section-label reveal">[03] Experience</p>
-      <hr class="section-rule reveal">
 
       <article class="exp-card reveal">
         <div class="exp-card__left">
-          <div class="exp-card__company">Tono&iuml;d</div>
-          <div class="exp-card__location">Paris, France</div>
-          <div class="exp-card__date">Oct 2024 &ndash; Present</div>
+          <div class="exp-card__company">Tono&iuml;d (2sync)</div>
+          <div class="exp-card__location">Paris / Bordeaux, France (Remote)</div>
+          <div class="exp-card__date">Oct 2024 &ndash; Dec 2026</div>
         </div>
         <div class="exp-card__right">
-          <h3 class="exp-card__title">Lead Full-Stack Engineer, 2sync</h3>
+          <h3 class="exp-card__title">Lead Full-Stack Engineer</h3>
           <ul class="exp-card__bullets">
-            <li>Adding new API integrations like Google Contacts, Gmail, Outlook Calendar, Outlook Mail, Outlook People, etc. for two-way sync between sources</li>
-            <li>Introduced change-based tracking to avoid fetching all entities from the source and save computation</li>
-            <li>Created a robust and independent heartbeat system that allows any scheduled job to expire if it fails to update the heartbeat within a certain time, handling stuck jobs and their side effects</li>
-            <li>Worked directly with Notion&rsquo;s official team in testing their beta webhook release, responsible for adding &ldquo;Retry attempt&rdquo; in Notion webhook&rsquo;s event header</li>
-            <li>Refactored the existing codebase into a more modular approach so that each integration can share the same baseline</li>
+            <li>Built 7 of 2sync&rsquo;s 10 two-way provider integrations end-to-end across the Node.js/TypeScript backend and Vue/Nuxt dashboard: Google Contacts, Gmail, Outlook Calendar, Outlook Contacts, Outlook Mail, Microsoft To Do, and Google Sheets.</li>
+            <li>Invented a step-level Redis heartbeat system tied to execution IDs to detect and terminate stalled sync jobs, and engineered multi-layered deletion-safety guardrails so transient third-party API failures never wipe customer data.</li>
+            <li>Built a daily two-stage automation health monitor and led zero-downtime production MongoDB migrations&mdash;including migrating to Notion&rsquo;s data-source API with full analysis and rollback scripts.</li>
+            <li>Authored reusable Claude Code skills and architectural specs encoding strict provider-isolation rules and staging QA checklists, accelerating new integration delivery while keeping human design and production dry-run verification in control.</li>
+            <li>Took over full engineering ownership in mid-2026 (weekly release train, CI/CD, Hetzner/OpenTofu/Dokploy infrastructure cutover, on-call, and KPI tracking) and operated the entire live SaaS solo for four weeks&mdash;including incident response, customer support, and billing&mdash;while shipping Google Sheets.</li>
           </ul>
         </div>
       </article>
@@ -348,9 +255,98 @@
       </article>
     </section>
 
-    <!-- [04] PROJECTS -->
+    <!-- [02] CASE STUDIES -->
+    <section id="case-studies" class="section">
+      <p class="section-label reveal">[02] Selected Architecture &amp; Case Studies</p>
+      <hr class="section-rule reveal">
+      <p class="section-note reveal">// Systems I built and ran at 2sync, described at the architecture level</p>
+
+      <article class="case-card reveal">
+        <header class="case-card__header">
+          <span class="case-card__index" aria-hidden="true">01</span>
+          <h3 class="case-card__title">Teaching Coding Agents to Build Two-Way Sync Integrations Safely</h3>
+          <span class="case-card__badge">Full case study coming soon</span>
+        </header>
+        <dl class="case-card__rows">
+          <div class="case-card__row">
+            <dt>Context</dt>
+            <dd>Adding a two-way integration touches OAuth, field mapping, rate limits, queue workers, and UI onboarding&mdash;where naive shared abstractions cause subtle data-loss bugs.</dd>
+          </div>
+          <div class="case-card__row">
+            <dt>Architecture</dt>
+            <dd>Authored reusable Claude Code skills and reference specs encoding strict provider-isolation rules alongside automated staging QA checklists.</dd>
+          </div>
+          <div class="case-card__row case-card__row--outcome">
+            <dt>Outcome</dt>
+            <dd>Shipped Microsoft To Do and two-way Google Sheets (using ULID row keys and three-way field-hash merging) cleanly into production.</dd>
+          </div>
+        </dl>
+        <div class="case-card__tags">
+          <span class="tag">Claude Code</span>
+          <span class="tag">OAuth</span>
+          <span class="tag">Two-way sync</span>
+          <span class="tag">ULID</span>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <header class="case-card__header">
+          <span class="case-card__index" aria-hidden="true">02</span>
+          <h3 class="case-card__title">Fault-Tolerant Queue Orchestration &amp; Deletion-Safety Guardrails</h3>
+        </header>
+        <dl class="case-card__rows">
+          <div class="case-card__row">
+            <dt>Context</dt>
+            <dd>In multi-provider sync engines, stalled workers can hang silently while partial API responses can trick diff engines into wiping user records.</dd>
+          </div>
+          <div class="case-card__row">
+            <dt>Architecture</dt>
+            <dd>Designed a Redis TTL heartbeat mechanism with execution-scoped termination, pre-deletion upstream verification guards, and a capped two-stage daily health monitor.</dd>
+          </div>
+          <div class="case-card__row case-card__row--outcome">
+            <dt>Outcome</dt>
+            <dd>Eliminated false-deletion failure modes, executed zero-downtime MongoDB migrations with rollback safety, and protected customer data across 7 integrations.</dd>
+          </div>
+        </dl>
+        <div class="case-card__tags">
+          <span class="tag">Redis</span>
+          <span class="tag">Job queues</span>
+          <span class="tag">MongoDB</span>
+        </div>
+      </article>
+
+      <article class="case-card reveal">
+        <header class="case-card__header">
+          <span class="case-card__index" aria-hidden="true">03</span>
+          <h3 class="case-card__title">End-to-End Production Ownership &amp; Solo SaaS Operations</h3>
+        </header>
+        <dl class="case-card__rows">
+          <div class="case-card__row">
+            <dt>Context</dt>
+            <dd>Transitioned from backend engineer to full product owner across backend, Vue/Nuxt dashboard, and Hetzner/OpenTofu/Dokploy infrastructure.</dd>
+          </div>
+          <div class="case-card__row">
+            <dt>Architecture</dt>
+            <dd>Established a weekly release train gated by CI checks and production dry-runs, executed a multi-server infrastructure cutover, and structured support triage.</dd>
+          </div>
+          <div class="case-card__row case-card__row--outcome">
+            <dt>Outcome</dt>
+            <dd>Operated the entire live SaaS solo for four weeks (releases, incidents, support, and billing) while shipping a new integration.</dd>
+          </div>
+        </dl>
+        <div class="case-card__tags">
+          <span class="tag">Vue / Nuxt</span>
+          <span class="tag">Hetzner</span>
+          <span class="tag">OpenTofu</span>
+          <span class="tag">Dokploy</span>
+          <span class="tag">CI</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- [03] PROJECTS -->
     <section id="projects" class="section section--wide">
-      <p class="section-label reveal">[04] Projects</p>
+      <p class="section-label reveal">[03] Projects</p>
       <hr class="section-rule reveal">
 
       <div class="projects-grid">
@@ -456,21 +452,6 @@
 
         <div class="project-card reveal">
           <div class="project-card__header">
-            <h3 class="project-card__name">K-Web Browser</h3>
-            <span class="project-card__status project-card__status--archived" title="Archived"></span>
-          </div>
-          <p class="project-card__desc">Custom web browser built from scratch in C++ for learning purposes.</p>
-          <div class="project-card__tags">
-            <span class="tag">C++</span>
-          </div>
-          <a href="https://github.com/kiranadh1452/K-Web-Browser" class="project-card__link" target="_blank" rel="noopener noreferrer">
-            GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </a>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card__header">
             <h3 class="project-card__name">Site Limiter</h3>
             <span class="project-card__status project-card__status--active" title="Active"></span>
           </div>
@@ -484,40 +465,12 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
           </a>
         </div>
-
-        <div class="project-card reveal">
-          <div class="project-card__header">
-            <h3 class="project-card__name">Gesture Labs</h3>
-            <span class="project-card__status project-card__status--archived" title="Archived"></span>
-          </div>
-          <p class="project-card__desc">Gesture recognition system for web browser control using Convolutional Neural Networks. Undergraduate research under Prof. Suresh Timilsina.</p>
-          <div class="project-card__tags">
-            <span class="tag">Python</span>
-            <span class="tag">CNN</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-card__header">
-            <h3 class="project-card__name">Web Page Builder</h3>
-            <span class="project-card__status project-card__status--archived" title="Archived"></span>
-          </div>
-          <p class="project-card__desc">A drag-and-drop web page builder made purely with vanilla JavaScript. Solo major project at Leapfrog internship.</p>
-          <div class="project-card__tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Vanilla JS</span>
-          </div>
-          <a href="https://github.com/kiranadh1452/Web-Page-Builder" class="project-card__link" target="_blank" rel="noopener noreferrer">
-            GitHub
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-          </a>
-        </div>
       </div>
     </section>
 
-    <!-- [05] OPEN SOURCE -->
+    <!-- [04] OPEN SOURCE -->
     <section id="open-source" class="section">
-      <p class="section-label reveal">[05] Open Source</p>
+      <p class="section-label reveal">[04] Open Source</p>
       <hr class="section-rule reveal">
 
       <div class="oss-card reveal">
@@ -538,9 +491,9 @@
       </div>
     </section>
 
-    <!-- [06] COMMUNITY -->
+    <!-- [05] COMMUNITY -->
     <section id="community" class="section">
-      <p class="section-label reveal">[06] Community</p>
+      <p class="section-label reveal">[05] Community</p>
       <hr class="section-rule reveal">
 
       <blockquote class="community-quote reveal">
@@ -567,16 +520,16 @@
       </div>
     </section>
 
-    <!-- [07] CONTACT -->
+    <!-- [06] CONTACT -->
     <section id="contact" class="section contact">
-      <p class="section-label reveal">[07] Contact</p>
+      <p class="section-label reveal">[06] Contact</p>
       <hr class="section-rule reveal">
       <h2 class="contact__heading reveal">Let's build something.</h2>
       <p class="contact__availability reveal">
         <span class="availability__dot" aria-hidden="true"></span>
         Available from <strong>7 December 2026</strong> &middot; open for intro calls now
       </p>
-      <p class="contact__terms reveal">Part-time fractional retainers (15&ndash;20 hrs/wk) or full-time B2B contracts, for bootstrapped SaaS and Seed&ndash;Series A teams. Async-first, EU/UK/global remote.</p>
+      <p class="contact__terms reveal">Fractional retainers (15&ndash;20 hrs/wk) or full-time remote B2B contracts, for bootstrapped SaaS and Seed&ndash;Series A teams. Async-first, EU/UK/global.</p>
       <p class="contact__email-wrap reveal">
         <a href="mailto:kiranadh1452@gmail.com" class="contact__email">kiranadh1452@gmail.com</a>
       </p>
