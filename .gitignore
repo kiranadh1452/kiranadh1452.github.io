@@ -3,6 +3,9 @@ CLAUDE.md
 .claude/
 .playwright-mcp/
 
+# Offline material that must not be published (e.g. resume PDF)
+.local/
+
 # OS files
 .DS_Store
 Thumbs.db
