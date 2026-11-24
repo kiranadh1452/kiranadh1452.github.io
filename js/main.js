@@ -203,7 +203,8 @@ function initSectionTracking() {
       }
     });
   }, {
-    threshold: 0.2,
+    // threshold 0: sections taller than the band can never reach a ratio threshold
+    threshold: 0,
     rootMargin: '-10% 0px -60% 0px'
   });
 
@@ -256,10 +257,14 @@ function initCommitGraph() {
   progressLine.setAttribute('id', 'graph-progress');
   svg.appendChild(progressLine);
 
-  // Experience branch paths (between dot 0 and dot 1 area)
+  const sectionIds = Array.from(sections).map(s => s.id);
+
+  // Experience branch paths (between the experience dot and the next one)
   // fork into two lines representing Nepal and US career
-  const branchStart = 50 + (1 / (numSections - 1)) * 900 * 0.15;
-  const branchEnd = 50 + (1 / (numSections - 1)) * 900 * 0.85;
+  const expIdx = Math.max(sectionIds.indexOf('experience'), 0);
+  const segment = 900 / Math.max(numSections - 1, 1);
+  const branchStart = 50 + (expIdx + 0.15) * segment;
+  const branchEnd = 50 + (expIdx + 0.85) * segment;
 
   const branchLeft = document.createElementNS(svgNS, 'path');
   branchLeft.setAttribute('d', 'M20,' + branchStart + ' C10,' + (branchStart + 30) + ' 8,' + (branchEnd - 30) + ' 20,' + branchEnd);
@@ -278,7 +283,6 @@ function initCommitGraph() {
   svg.appendChild(branchRight);
 
   // Dots for each section
-  const sectionIds = Array.from(sections).map(s => s.id);
   for (let i = 0; i < numSections; i++) {
     const cy = 50 + (i / (numSections - 1)) * 900;
     const circle = document.createElementNS(svgNS, 'circle');
