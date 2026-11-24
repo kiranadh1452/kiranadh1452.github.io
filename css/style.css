@@ -1140,16 +1140,6 @@ button {
   transition: color 300ms;
 }
 
-.footer__link {
-  font-size: var(--type-small);
-  color: var(--text-tertiary);
-  transition: color 200ms;
-}
-
-.footer__link:hover {
-  color: var(--accent-primary);
-}
-
 /* ========================================
    COMMIT GRAPH SIDEBAR (Desktop)
    ======================================== */
